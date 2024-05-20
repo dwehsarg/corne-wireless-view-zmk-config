@@ -1,1 +1,14 @@
+/ {
+    behaviors {
+        unicode {
+            compatible = "zmk,behavior-unicode";
+            label = "UNICODE";
+        };
 
+        unicode_shifted {
+            compatible = "zmk,behavior-unicode";
+            label = "UNICODE_SHIFT";
+            shift = <LEFT_SHIFT>;
+        };
+    };
+};
