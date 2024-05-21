@@ -13,7 +13,7 @@
         macro_ue: macro_ue {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LEFT_ALT &kp N0 &kp N0 &kp F &kp C>;
+            bindings = <&kp LA(KP_N0) &kp LA(KP_N0) &kp LA(F) &kp LA(C)>;
             label = "MACRO_UE";
         };
 
@@ -44,9 +44,9 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E     &kp R    &kp T    &kp Z  &kp U      &kp I       &kp O    &kp P      &macro_ue
-&kp TAB    &kp A  &kp S  &kp D     &kp F    &kp G    &kp H  &kp J      &kp K       &kp L    &macro_oe  &macro_ae
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V    &kp B    &kp N  &kp M      &kp KP_DOT  &kp DOT  &kp MINUS  &kp RIGHT_SHIFT
+&kp ESC    &kp Q  &kp W  &kp E     &kp R    &kp T    &kp Z  &kp U      &kp I         &kp O       &kp P      &macro_ue
+&kp TAB    &kp A  &kp S  &kp D     &kp F    &kp G    &kp H  &kp J      &kp K         &kp L       &macro_oe  &macro_ae
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V    &kp B    &kp N  &kp M      &kp KP_COMMA  &kp KP_DOT  &kp MINUS  &kp RIGHT_SHIFT
                          &kp LGUI  &kp RET  &mo 1    &mo 2  &kp SPACE  &kp RALT
             >;
         };
