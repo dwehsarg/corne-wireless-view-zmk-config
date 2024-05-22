@@ -35,7 +35,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Mac_Base {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -51,7 +51,7 @@
             >;
         };
 
-        lower_layer {
+        Mac1 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -60,14 +60,14 @@
 
             display-name = "Lower";
             bindings = <
-&kp GRAVE   &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6         &kp N7    &kp N8        &kp N9     &kp N0            &kp MINUS
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp BACKSLASH     &kp EQUAL
-&trans      &trans        &trans        &trans        &kp F3        &kp F4          &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp SINGLE_QUOTE  &trans
+&kp GRAVE   &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6         &kp N7    &kp N8        &kp N9     &kp N0             &kp MINUS
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp RIGHT_BRACKET  &kp EQUAL
+&trans      &trans        &mo 4         &trans        &trans        &trans          &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp BACKSLASH      &trans
                                         &kp LCTRL     &mo 3         &trans          &trans         &trans    &trans
             >;
         };
 
-        raise_layer {
+        Mac2 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -83,12 +83,48 @@
             >;
         };
 
-        layer_3 {
+        Mac3 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9        &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N4  &kp KP_N5  &kp KP_NUMBER_6  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3        &trans  &trans
                         &trans  &trans  &trans    &trans  &kp KP_N0  &kp COMMA
+            >;
+        };
+
+        Win_Base {
+            bindings = <
+&kp ESC         &kp Q  &kp W  &kp E             &kp R    &kp T        &kp Y            &kp U      &kp I          &kp O       &kp P      &kp LEFT_BRACKET
+&kp TAB         &kp A  &kp S  &kp D             &kp F    &kp G        &kp H            &kp J      &kp K          &kp L       &kp SEMI   &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V    &kp B        &kp N            &kp M      &kp COMMA      &kp PERIOD  &kp SLASH  &kp RIGHT_SHIFT
+                              &kp LEFT_CONTROL  &kp RET  &lt 5 DEL    &lt 6 BACKSPACE  &kp SPACE  &kp RIGHT_ALT
+            >;
+        };
+
+        Win1 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        Win2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        Win3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
