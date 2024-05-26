@@ -44,10 +44,10 @@
 
             display-name = "Mac0";
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E     &kp R    &kp T           &kp Y            &kp U      &kp I      &kp O    &kp P      &kp LEFT_BRACKET
-&kp TAB    &kp A  &kp S  &kp D     &kp F    &kp G           &kp H            &kp J      &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V    &kp B           &kp N            &kp M      &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
-                         &kp LGUI  &kp RET  &lt 1 DELETE    &lt 2 BACKSPACE  &kp SPACE  &kp RALT
+&kp ESC    &kp Q  &kp W  &kp E     &kp R      &kp T           &kp Y            &kp U      &kp I      &kp O    &kp P      &kp LEFT_BRACKET
+&kp TAB    &kp A  &kp S  &kp D     &kp F      &kp G           &kp H            &kp J      &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B           &kp N            &kp M      &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
+                         &kp LGUI  &lt 8 RET  &lt 1 DELETE    &lt 2 BACKSPACE  &kp SPACE  &kp RALT
             >;
         };
 
@@ -134,12 +134,12 @@
         };
 
         Mac4 {
-            display-name = "Mac4"
+            display-name = "Mac4";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp RA(N7)  &kp RA(N8)  &kp RA(N9)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LT      &kp RA(N5)  &kp RA(N6)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp GT      &kp LS(N8)  &kp LS(N9)  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans      &trans      &trans
             >;
         };
     };
